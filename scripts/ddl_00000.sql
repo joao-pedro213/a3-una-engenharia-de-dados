@@ -1,23 +1,23 @@
 CREATE TABLE dimensao_cnae (
     id_cnae int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    codigo varchar(50),
-    descricao varchar(50),
-    tipo_cnae varchar(50),
+    codigo varchar(max),
+    descricao varchar(max),
+    tipo_cnae varchar(max),
 );
 
 CREATE TABLE dimensao_unidade_resultado (
     id_unidade int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    nome varchar(50),
+    nome varchar(max),
 );
 
 CREATE TABLE dimensao_categoria_empresa (
     id_categoria int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    nome varchar(50),
+    nome varchar(max),
 );
 
 CREATE TABLE dimensao_variaveis_pesquisa (
     id_variavel int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    variavel varchar(50),
+    variavel varchar(max),
 	ano int,
 );
 
