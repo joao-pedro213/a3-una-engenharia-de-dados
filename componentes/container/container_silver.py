@@ -19,7 +19,10 @@ class ContainerSilver(Container):
         Lê dados do artefato armazenado no container bronze
         """
         self.validar_artefato(artefato=artefato)
-        return read_csv(filepath_or_buffer=str(artefato), sep=";")
+        return read_csv(
+            filepath_or_buffer=str(artefato),
+            sep=";",
+            dtype=artefato.schema)
 
     def persistir_dados(self, artefato: Artefato, dataframe: DataFrame) -> None:
         """

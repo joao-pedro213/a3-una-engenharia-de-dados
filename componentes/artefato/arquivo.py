@@ -9,6 +9,7 @@ class Arquivo(Artefato):
     Representação de um arquivo que armazena dados
     """
     fonte: str
+    schema: dict = None
     diretorio_raiz: str = "../../../dados"
     tipo: str = "csv"
 
