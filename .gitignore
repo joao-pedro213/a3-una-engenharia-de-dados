@@ -2,3 +2,4 @@
 /dados/silver/*
 /dados/gold/*
 __pycache__
+.env

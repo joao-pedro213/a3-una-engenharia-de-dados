@@ -9,3 +9,4 @@ class CategoriaDeArmazenamento(Enum):
     BRONZE = "bronze"
     SILVER = "silver"
     GOLD = "gold"
+    SQL_SERVER = "sql_server"
