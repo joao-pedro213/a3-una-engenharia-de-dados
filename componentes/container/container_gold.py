@@ -16,7 +16,7 @@ class ContainerGold(Container):
 
     def extrair_dados(self, artefato: Artefato) -> DataFrame:
         """
-        Lê dados do artefato armazenado no container bronze
+        Lê dados do artefato armazenado no container gold
         """
         self.validar_artefato(artefato=artefato)
         return read_csv(
@@ -26,7 +26,7 @@ class ContainerGold(Container):
 
     def persistir_dados(self, artefato: Artefato, dataframe: DataFrame) -> None:
         """
-        Persiste o artefato informado como parâmetro no container silver
+        Persiste o artefato informado como parâmetro no container gold
         """
         self.validar_artefato(artefato=artefato)
         dataframe.to_csv(

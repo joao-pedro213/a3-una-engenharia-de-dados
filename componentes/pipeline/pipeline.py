@@ -54,7 +54,7 @@ class Pipeline:
         Persiste os dados no container de saída
         """
         self._logger.log_mensagem(
-            mensagem=f"Carregando arquivo: {str(self._artefato_de_saida)}")
+            mensagem=f"Carregando artefato: {str(self._artefato_de_saida)}")
         self._container_de_saida.persistir_dados(
             artefato=self._artefato_de_saida,
             dataframe=dataframe)

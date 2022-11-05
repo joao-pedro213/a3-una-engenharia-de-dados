@@ -16,7 +16,7 @@ class ContainerSilver(Container):
 
     def extrair_dados(self, artefato: Artefato) -> DataFrame:
         """
-        Lê dados do artefato armazenado no container bronze
+        Lê dados do artefato armazenado no container silver
         """
         self.validar_artefato(artefato=artefato)
         return read_csv(
